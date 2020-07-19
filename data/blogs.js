@@ -11,7 +11,7 @@ export const mainBlogs = [{
       image:'/images/signal.jpg'
     },
     {
-      path:'/pages/why-should-i-switch-to-signal/',
+      path:'/pages/homomorphic-encryption/',
       title:'Homomorphic Encryption ',
       subtitle:'Trying figure out what it is.',
       image:'/images/homomorphic_encryption.jpg'

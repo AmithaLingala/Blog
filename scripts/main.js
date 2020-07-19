@@ -11,9 +11,8 @@ function generateBlogs() {
 
 function generateCard(blog, columns) {
   const column = createElement('div', ['column']);
-  const card = createElement('a', ['card']);
+  const card = createElement('a', ['card','box']);
   card.href = blog.path;
-  card.target= 'container-frame';
 
   const cardImage = createElement('div', ['card-image']);
   const figure = createElement('div', ['image','is-2by1']);
@@ -47,5 +46,4 @@ function createElement(element, classes) {
   tmpElement.classList.add(...classes);
   return tmpElement;
 }
-
 generateBlogs();
