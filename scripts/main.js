@@ -4,13 +4,18 @@ function generateBlogs() {
   const cardHolder = document.getElementById('card-holder');
   let columns = createElement('div', ['columns']);
   mainBlogs.forEach((blog, i) => {
+    console.log(i);
+    if (i% 4 === 0) {
+      cardHolder.appendChild(columns);
+      columns = createElement('div', ['columns']);
+    }
     generateCard(blog, columns);
   });
   cardHolder.appendChild(columns);
 }
 
 function generateCard(blog, columns) {
-  const column = createElement('div', ['column']);
+  const column = createElement('div', ['column','is-3']);
   const card = createElement('a', ['card','box']);
   card.href = blog.path;
 
