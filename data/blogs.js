@@ -6,7 +6,7 @@ export const mainBlogs = [
         path: '/pages/data-privacy/',
         title: 'Why should I care about data privacy?',
         subtitle: 'Six reasons why.',
-        image: '/images/DP/DP.jpg'
+        image: '/images/DP/dp.jpg'
       },
       {
         path: '/pages/why-should-i-switch-to-signal/',
