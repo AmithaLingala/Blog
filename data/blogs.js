@@ -3,6 +3,12 @@ export const mainBlogs = [
     type: 'Privacy',
     blogs: [
       {
+        path: '/pages/data-privacy/',
+        title: 'Why should I care about data privacy?',
+        subtitle: 'Six reasons why.',
+        image: '/images/DP/DP.jpg'
+      },
+      {
         path: '/pages/why-should-i-switch-to-signal/',
         title: 'Why should I switch to Signal?',
         subtitle: 'A privacy respecting secure messenger.',
@@ -14,6 +20,7 @@ export const mainBlogs = [
         subtitle: 'Trying figure out what it is.',
         image: '/images/HE/HE_1.png'
       },
+      
     ]
   }, {
     type: 'Simple Recipes',
