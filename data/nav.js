@@ -1,5 +1,9 @@
 export const nav = [
   {
+    name:'Home',
+    url:'/',
+  },
+  {
     name:'ExeAmi',
     url:'https://exeami.com',
     isNewTab:true
@@ -11,5 +15,9 @@ export const nav = [
   {
     name:'Contact',
     url:'/pages/contact/',
+  },
+  {
+    name:'Comics',
+    url:'/pages/comics/',
   }
 ];
