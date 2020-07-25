@@ -58,11 +58,14 @@
       <div class="container has-text-light is-fluid">
         <h1 class="title has-text-light is-1">
           Tomato Chutney
-        </h1>  <h2 class="subtitle is-3 has-text-light">
+        </h1>
+        <h2 class="subtitle is-3 has-text-light">
           Must try...!
         </h2>
         - Created on <time datetime="2020-07-21">21<sup>st</sup> July 2020 </time>
-       </div> </div> </section>
+      </div>
+    </div>
+  </section>
   </section><br><br>
   <section>
     <div class="container is-fluid ">
@@ -121,14 +124,8 @@
   <section>
     <div class="container is-fluid">
       <h1 class="subtitle">Pics for reference</h1>
-      <div class="columns is-centered">
-        <div class="column is-two-fifths">
-          <div class="container is-medium has-carousel">
-
-            <div id="carousel-demo" class="carousel">
-            </div>
-
-          </div>
+      <div class="container has-carousel">
+        <div id="carousel-demo" class="carousel">
         </div>
       </div>
     </div>
@@ -148,12 +145,13 @@
     const list = document.getElementById('carousel-demo');
     const wrapper = document.createElement('div');
     wrapper.classList.add('box');
+    wrapper.classList.add('has-text-centered');
     const img = document.createElement('img');
-
     for (let i = 1; i < 18; i++) {
       const wrapperClone = wrapper.cloneNode();
       wrapperClone.classList.add(`item-${i}`);
       const imgClone = img.cloneNode();
+      imgClone.width = "700";
       imgClone.src = `/images/recipes/th/Picture${i}.png`
       wrapperClone.appendChild(imgClone);
       list.appendChild(wrapperClone);
@@ -164,7 +162,10 @@
     });
   </script>
   <style>
-    .has-bg-img { background: url('/images/recipes/th/final.png')center center; background-size:cover; }
+    .has-bg-img {
+      background: url('/images/recipes/th/final.png')center center;
+      background-size: cover;
+    }
   </style>
 </body>
 </body>
