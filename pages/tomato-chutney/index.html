@@ -53,32 +53,31 @@
       </div>
     </noscript>
   </section>
-  <section class="hero is-info">
+  <section class="hero is-medium has-bg-img">
     <div class="hero-body">
-      <div class="container is-fluid">
-        <h1 class="title">
+      <div class="container has-text-light is-fluid">
+        <h1 class="title has-text-light is-1">
           Tomato Chutney
-        </h1>
-        <h2 class="subtitle">
+        </h1>  <h2 class="subtitle is-3 has-text-light">
           Must try...!
         </h2>
         - Created on <time datetime="2020-07-21">21<sup>st</sup> July 2020 </time>
-      </div>
-    </div>
+       </div> </div> </section>
   </section><br><br>
   <section>
     <div class="container is-fluid ">
-      This is my special recipe which goes great with white rice and potato fry. Very simple recipe which tastes good with roti, idly, dosa
+      This is my special recipe which goes great with white rice and potato fry. Very simple recipe which tastes good
+      with roti, idly, dosa
       and rice.
       <br>Let’s check out the recipe. :)
     </div>
   </section><br><br>
   <section>
     <div class="container is-fluid">
-      <span class="tag is-info">Ingredients</span><br><br>
+      <span class="tag is-dark">Ingredients</span><br><br>
       <div class="content">
         <ul>
-          <li>Tomatoes – 5 medium size</li>
+          <li>Tomatoes – 4 medium size</li>
           <li>Garlic – handful (15 to 20 cloves)</li>
           <li>Green chilly – 10 to 12</li>
           <li>Oil – 2 tbsp</li>
@@ -93,7 +92,7 @@
   </section><br><br>
   <section>
     <div class="container is-fluid">
-      <span class="tag is-info">Instructions</span><br><br>
+      <span class="tag is-dark">Instructions</span><br><br>
       <div class="content">
         <ol>
           <li>Chop green chillies, garlic and tomatoes.(Doesn’t need to be small as we will grind it later)</li>
@@ -116,31 +115,24 @@
   </section><br><br>
   <section>
     <div class="container is-fluid">
-      <span class="tag is-info">Tips</span><br><br>
+      <span class="tag is-dark">Tips</span><br><br>
       Make sure you take equal amount of green chili and garlic; this makes the recipe tasty.
   </section><br><br>
-  <!-- <section>
-    <div class="columns is-centered">
-      <div class="column is-two-fifths">
-        <div class="container is-medium has-carousel">
-         
-          <div id="carousel-demo" class="carousel">
-            <div class="item-1 box">
-              <img src="/images/welcome.svg">
+  <section>
+    <div class="container is-fluid">
+      <h1 class="subtitle">Pics for reference</h1>
+      <div class="columns is-centered">
+        <div class="column is-two-fifths">
+          <div class="container is-medium has-carousel">
+
+            <div id="carousel-demo" class="carousel">
             </div>
-            <div class="item-2 box">
-              <img src="/images/welcome.svg">
-            </div>
-            <div class="item-3 box">
-              <img src="/images/welcome.svg">
-            </div>
+
           </div>
-          
         </div>
       </div>
     </div>
-
-  </section><br><br> -->
+  </section><br><br>
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
@@ -153,11 +145,27 @@
   <script src="/scripts/navbar.js" type="module" charset="utf-8"></script>
   <script src="/scripts/bulma-carousel.min.js" type="module" charset="utf-8"></script>
   <script type="module">
+    const list = document.getElementById('carousel-demo');
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('box');
+    const img = document.createElement('img');
+
+    for (let i = 1; i < 18; i++) {
+      const wrapperClone = wrapper.cloneNode();
+      wrapperClone.classList.add(`item-${i}`);
+      const imgClone = img.cloneNode();
+      imgClone.src = `/images/recipes/th/Picture${i}.png`
+      wrapperClone.appendChild(imgClone);
+      list.appendChild(wrapperClone);
+    }
     bulmaCarousel.attach('#carousel-demo', {
       slidesToScroll: 1,
       slidesToShow: 1
     });
   </script>
+  <style>
+    .has-bg-img { background: url('/images/recipes/th/final.png')center center; background-size:cover; }
+  </style>
 </body>
 </body>
 
