@@ -22,7 +22,23 @@ export const mainBlogs = [
       },
       
     ]
-  }, {
+  }, /*{
+    type: 'Tutorials',
+    blogs: [
+      {
+        path: '/pages/introduction/',
+        title: 'Welcome to C# tutorials by Exeami',
+        subtitle: '',
+        image: '/images/tutorials/c-sharp/intro.png'
+      },
+      {
+        path: '/pages/c-sharp-delegate/',
+        title: 'C# Delgate',
+        subtitle: '',
+        image: '/images/tutorials/c-sharp/delegate.png'
+      },
+    ]
+  },*/ {
     type: 'Simple Recipes',
     blogs: [
       {
