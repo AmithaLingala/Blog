@@ -38,7 +38,7 @@ export const mainBlogs = [
         image: '/images/tutorials/c-sharp/delegate.png'
       },
     ]
-  },*/ {
+  }, {
     type: 'Simple Recipes',
     blogs: [
       {
@@ -48,5 +48,5 @@ export const mainBlogs = [
         image: '/images/recipes/th/final.png'
       },
     ]
-  }
+  }*/
 ]
