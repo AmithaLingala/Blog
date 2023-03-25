@@ -19,7 +19,7 @@ export const mainBlogs = [
         title: 'Why should I switch to Signal?',
         subtitle: 'A privacy respecting secure messenger.',
         image: '/images/signal/signal.jpg'
-      },
+      }
       
     ]
   }, /*{
