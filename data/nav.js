@@ -1,23 +1,38 @@
 export const nav = [
   {
-    name:'Home',
-    url:'/',
+    name: "Home",
+    icon: "",
+    url: "/",
+  },
+  // {
+  //   name:'ExeAmi',
+  //   icon:'🏡',
+  //   url:'https://e xeami.com',
+  //   isNewTab:true
+  // },
+  {
+    name: "About",
+    icon: "",
+    url: "/pages/about/",
   },
   {
-    name:'ExeAmi',
-    url:'https://exeami.com',
-    isNewTab:true
+    name: "Blogs",
+    icon: "",
+    url: "/",
   },
   {
-    name:'About',
-    url:'/pages/about/',
+    name: "Projects",
+    icon: "",
+    url: "/",
   },
   {
-    name:'Contact',
-    url:'/pages/contact/',
+    name: "Comics",
+    icon: "",
+    url: "/pages/comics/",
   },
   {
-    name:'Comics',
-    url:'/pages/comics/',
-  }
+    name: "Contact",
+    icon: "",
+    url: "/pages/contact/",
+  },
 ];

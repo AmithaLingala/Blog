@@ -1,42 +1,46 @@
-const navbar = document.getElementById('navbar');
-const link = document.createElement('a');
-link.classList.add('navbar-item');
+import { createElement } from "/scripts/util.js";
+import { nav } from "/data/nav.js";
 
-import {nav} from '/data/nav.js';
+const navbar = document.getElementById("navbar");
 
 nav.forEach((item, i) => {
-  const navItem = link.cloneNode();
-  navItem.href = item.url;
-  navItem.innerHTML = item.name;
+  const navItem = createElement("a", {
+    classes: ["navbar-item"],
+    attributes: [{ name: "href", value: item.url }],
+  });
+
+  const icon = createElement("span", {
+    classes: ["nav-icon"],
+    attributes: [{ name: "aria-hidden", value: true }],
+  });
+
+  icon.appendChild(document.createTextNode(item.icon));
+  navItem.appendChild(icon);
+  navItem.appendChild(document.createTextNode(item.name));
+
   if (item.isNewTab) {
-    navItem.target = '_blank';
+    navItem.target = "_blank";
   }
   navbar.appendChild(navItem);
 });
 
-// <a class="navbar-item" target="_blank" href="https://exeami.com">
-//   ExeAmi
-// </a>
-// <a class="navbar-item">
-//   About
-// </a>
-// <a class="navbar-item">
-//   Contact
-// </a>
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  const $navbarBurgers = Array.prototype.slice.call(
+    document.querySelectorAll(".navbar-burger"),
+    0
+  );
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
     // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
+    $navbarBurgers.forEach((el) => {
+      el.addEventListener("click", () => {
         // Get the target from the "data-target" attribute
         const target = el.dataset.target;
         const $target = document.getElementById(target);
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
+        el.classList.toggle("is-active");
+        $target.classList.toggle("is-active");
       });
     });
   }

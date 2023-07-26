@@ -1,0 +1,25 @@
+.navbar {
+  align-content: center;
+  justify-content: center;
+}
+
+.nav-icon {
+  margin-right: 0.2em;
+}
+
+.navbar .navbar-menu {
+  flex-grow: initial;
+  flex-shrink: initial;
+}
+
+figure.image.is-2by1 {
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-brand .navbar-item,
+  .navbar-tabs .navbar-item {
+    align-items: initial;
+    display: flex;
+  }
+}
