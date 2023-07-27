@@ -1,29 +1,3 @@
-import { createElement } from "/scripts/util.js";
-import { nav } from "/data/nav.js";
-
-const navbar = document.getElementById("navbar");
-
-nav.forEach((item, i) => {
-  const navItem = createElement("a", {
-    classes: ["navbar-item"],
-    attributes: [{ name: "href", value: item.url }],
-  });
-
-  const icon = createElement("span", {
-    classes: ["nav-icon"],
-    attributes: [{ name: "aria-hidden", value: true }],
-  });
-
-  icon.appendChild(document.createTextNode(item.icon));
-  navItem.appendChild(icon);
-  navItem.appendChild(document.createTextNode(item.name));
-
-  if (item.isNewTab) {
-    navItem.target = "_blank";
-  }
-  navbar.appendChild(navItem);
-});
-
 document.addEventListener("DOMContentLoaded", () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(

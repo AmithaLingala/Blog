@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .navbar {
   align-content: center;
   justify-content: center;
@@ -29,4 +36,7 @@ figure.image.is-2by1 {
 }
 .color-main-light {
   background-color: rgb(250, 250, 250) !important;
+}
+.uwu {
+  height: 250px;
 }

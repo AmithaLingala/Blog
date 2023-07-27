@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Comics</title>
+  <!-- Meta data -->
+  <insert-template src="/templates/meta-data.html"></insert-template>
+  <meta name="description" content="Amitha Lingala's website with projects and blogs">
+  <meta name="keywords" content="comics,privacy,Amitha, Amitha Lingala">
+  <!-- Logo -->
+  <link rel="icon" type="image/png" href="/icons/exeami-light.jpg">
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles/bulma.min.css">
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+  <div class="card p-6 color-main">
+    <!-- Header -->
+    <insert-template src="/templates/navbar.html"></insert-template>
+    <div class="container is-max-desktop card-content color-main-light">
+      <section class="card">
+        <div class="hero is-link">
+          <div class="hero-body">
+            <div class="container is-fluid">
+              <h1 class="title">
+                Comics
+              </h1>
+              <h2 class="subtitle has-text-danger-light">
+                These are the comics which I saw in the internet and want to share, not created by me.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="card-content is-fluid">
+          <div class="tile">
+            <div class="tile is-parent is-vertical" id="card-holder">
+            </div>
+            <div class="modal" id="modal-container">
+              <div class="modal-background" id="modal-background"></div>
+              <div class="modal-content">
+                <p class="image">
+                  <img id="modal-image">
+                </p>
+              </div>
+              <button class="modal-close is-large" aria-label="close" id="modal-close"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <insert-template src="/templates/footer.html"></insert-template>
+    <!-- Scripts -->
+    <script src="/scripts/insert-template.js" type="module" charset="utf-8"></script>
+    <script src="/scripts/comic-gen.js" type="module" charset="utf-8"></script>
+</body>
+
+</html>

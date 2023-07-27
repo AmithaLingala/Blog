@@ -1,17 +1,16 @@
 export const comics = [
   {
-    credit:{
-      author:'Jeff Lofvers',
-      link:'https://donthitsave.com/comic/2015/11/06/software-innovation',
+    credit: {
+      author: "Jeff Lofvers",
+      link: "https://donthitsave.com/comic/2015/11/06/software-innovation",
     },
-    image: '/comics/money.jpeg'
+    image: "/comics/images/money.jpeg",
   },
   {
-    
-    credit:{
-      author:'Zach Weinersmith',
-      link:'https://www.smbc-comics.com/comic/listening',
+    credit: {
+      author: "Zach Weinersmith",
+      link: "https://www.smbc-comics.com/comic/listening",
     },
-    image: '/comics/spyingdevice.jpeg'
+    image: "/comics/images/spyingdevice.jpeg",
   },
 ];
