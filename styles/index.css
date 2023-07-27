@@ -23,3 +23,10 @@ figure.image.is-2by1 {
     display: flex;
   }
 }
+
+.color-main {
+  background-color: rgb(255, 255, 255) !important;
+}
+.color-main-light {
+  background-color: rgb(250, 250, 250) !important;
+}

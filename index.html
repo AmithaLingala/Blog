@@ -21,9 +21,8 @@
 </head>
 
 <body>
-  <div class="card p-3">
-    <nav class="navbar is-size-5 is-light is-spaced card-header is-fixed-top" role="navigation"
-      aria-label="main navigation">
+  <div class="card p-6 color-main">
+    <nav class="navbar is-size-5 is-spaced card-header color-main" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
           <img src="/icons/exeami.png">
@@ -53,11 +52,13 @@
       </div>
     </noscript>
 
-    <div class="container is-max-desktop card-content pt-6">
+    <div class="container is-max-desktop card-content color-main-light">
+      <div class="card color-main">
+        <section class="section">
+          <div class="is-fluid color-main-light" id="card-holder"> </div>
+        </section>
+      </div>
 
-      <section class="section">
-        <div class="is-fluid" id="card-holder"> </div>
-      </section>
       <footer class="footer">
         <div class="content has-text-centered">
           <p>
@@ -68,6 +69,7 @@
           </p>
         </div>
       </footer>
+
     </div>
   </div>
   <script src="/scripts/main.js" type="module" charset="utf-8"></script>

@@ -1,9 +1,9 @@
 export const nav = [
-  {
-    name: "Home",
-    icon: "",
-    url: "/",
-  },
+  // {
+  //   name: "Home",
+  //   icon: "",
+  //   url: "/",
+  // },
   // {
   //   name:'ExeAmi',
   //   icon:'🏡',
