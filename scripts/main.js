@@ -6,13 +6,6 @@ function generateBlogs() {
 
   // Get all available blog types and create row for each
   mainBlogs.forEach((blogType) => {
-    // Add title for blog type
-    // const title = createElement("div", {
-    //   classes: ["title", "has-text-dark", "has-text-centered"],
-    // });
-    // title.innerHTML = blogType.type;
-    // cardHolder.appendChild(title);
-
     let columns = createElement("div", { classes: ["columns"] });
     // Create a card for each blog
     blogType.blogs.forEach((blog, i) => {

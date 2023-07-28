@@ -12,12 +12,15 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/styles/bulma.min.css">
   <link rel="stylesheet" href="/styles/index.css">
+  <link rel="preload" href="/styles/bulma.min.css" as="style">
+  <link rel="preload" href="/styles/index.css" as="style">
 </head>
 
 <body>
   <main class="card p-6 color-main">
     <!-- Header -->
-    <insert-template src="/templates/navbar.html" script-src="/scripts/navbar.js" script-type="module" class="nav-skeleton"></insert-template>
+    <insert-template src="/templates/navbar.html" script-src="/scripts/navbar.js" script-type="module"
+      class="nav-skeleton"></insert-template>
     <div class="container is-max-desktop card-content color-main-light">
       <section class="card">
         <section class="card-header hero is-success">
