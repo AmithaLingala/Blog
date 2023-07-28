@@ -6,9 +6,13 @@ class InsertTemplate extends HTMLElement {
 
   async _load() {
     const source = this.getAttribute("src");
+    const script = this.getAttribute("script-src");
+    const scriptType = this.getAttribute("script-type");
+
     if (!source) {
       throw new Error("Missing src attribute given for insert-template tag");
     }
+
     let response = await fetch(source);
     if (response.status != 200) {
       throw new Error(
@@ -16,6 +20,14 @@ class InsertTemplate extends HTMLElement {
       );
     }
     this.innerHTML = await response.text();
+    if(script) {
+        const scriptElement = document.createElement("script");
+        scriptElement.src = script;
+        if(scriptType) {
+          scriptElement.type = scriptType;
+        }
+        this.appendChild(scriptElement);
+    }          
   }
 }
 

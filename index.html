@@ -15,19 +15,16 @@
 </head>
 
 <body>
-  <div class="card p-6 color-main">
+  <main class="card p-6 color-main">
     <!-- Header -->
-    <insert-template src="/templates/navbar.html" class="uwu"></insert-template>
-    <div class="container is-max-desktop card-content color-main-light">
+    <insert-template src="/templates/navbar.html" script-src="/scripts/navbar.js" script-type="module" class="nav-skeleton"> </insert-template>
+    <div class="h-entry container is-max-desktop card-content color-main-light">
       <section class="card">
         <section class="card-header hero is-info">
           <div class="hero-body">
             <div class="container is-fluid">
-              <h1 class="title">
-              </h1>
-              <h2 class="subtitle">
-
-              </h2>
+              <h1 class="title"></h1>
+              <h2 class="subtitle"></h2>
             </div>
           </div>
         </section>
@@ -37,10 +34,11 @@
           </p>
         </div>
       </section>
-      <!-- Footer -->
-      <insert-template src="/templates/footer.html"></insert-template>
+
     </div>
-  </div>
+      <!-- Footer -->
+    <insert-template src="/templates/footer.html"></insert-template>
+  </main>
   <!-- Scripts -->
   <script src="/scripts/insert-template.js" type="module" charset="utf-8"></script>
 </body>

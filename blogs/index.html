@@ -15,19 +15,19 @@
 </head>
 
 <body>
-  <div class="card p-6 color-main">
+  <main class="card p-6 color-main">
     <!-- Header -->
-    <insert-template src="/templates/navbar.html"></insert-template>
+    <insert-template src="/templates/navbar.html" script-src="/scripts/navbar.js" script-type="module" class="nav-skeleton"></insert-template>
     <div class="container is-max-desktop card-content color-main-light">
       <div class="card color-main">
         <section class="section">
           <div class="is-fluid color-main-light" id="card-holder"> </div>
         </section>
       </div>
-      <!-- Footer -->
-      <insert-template src="/templates/footer.html"></insert-template>
     </div>
-  </div>
+    <!-- Footer -->
+    <insert-template src="/templates/footer.html"></insert-template>
+  </main>
   <!-- Scripts -->
   <script src="/scripts/insert-template.js" type="module" charset="utf-8"></script>
   <script src="/scripts/main.js" type="module" charset="utf-8"></script>
