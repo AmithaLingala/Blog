@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Blogs</title>
+  <title>###Title###</title>
   <!-- Meta data -->
   <insert-template src="/templates/meta-data.html"></insert-template>
   <meta name="description" content="Amitha Lingala's website with projects and blogs">
@@ -22,18 +22,28 @@
     <insert-template src="/templates/navbar.html" script-src="/scripts/navbar.js" script-type="module"
       class="nav-skeleton"></insert-template>
     <div class="container is-max-desktop card-content color-main-light">
-      <div class="card color-main">
-        <section class="section">
-          <div class="is-fluid color-main-light" id="card-holder"> </div>
+      <section class="card">
+        <section class="card-header hero is-success">
+          <div class="hero-body">
+            <div class="container is-fluid">
+              <h1 class="title">###Title###</h1>
+              <h2 class="subtitle">###Subtitle###</h2>
+              ###Date###
+            </div>
+          </div>
         </section>
-      </div>
+        <div class="card-content">
+          <p>
+
+          </p>
+        </div>
+      </section>
     </div>
     <!-- Footer -->
     <insert-template src="/templates/footer.html"></insert-template>
   </main>
   <!-- Scripts -->
   <script src="/scripts/insert-template.js" type="module" charset="utf-8"></script>
-  <script src="/scripts/blog.js" type="module" charset="utf-8"></script>
 </body>
 
 </html>

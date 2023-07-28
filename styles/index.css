@@ -6,19 +6,18 @@ body {
 }
 
 main {
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .container {
- width:100%;
- flex-grow: 1;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .nav-skeleton {
-  display:block;
-  min-height: 5.25rem;;
+  display: block;
+  min-height: 5.25rem;
 }
 
 .navbar {
@@ -54,6 +53,6 @@ figure.image.is-2by1 {
   background-color: rgb(250, 250, 250) !important;
 }
 
-.left {
-  align-items: center;
+.tag-container > *:not(:last-child) {
+  margin-right: 0.5em;
 }
